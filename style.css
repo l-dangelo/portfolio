@@ -23,6 +23,7 @@ nav ul {
 
 nav li {
   float: left;
+  width: 25%;
 }
 
 nav li a {
@@ -41,4 +42,24 @@ nav li a:hover {
 /* Set active tab */
 nav .active {
   background-color: #4CAF50;
+}
+
+/* Hide the subcategories initially */
+nav li ul {
+  display: none;
+}
+
+/* Show the subcategories when hovering over "portfolio" */
+nav li:hover ul {
+  display: block;
+}
+
+/* Style the subcategories */
+nav li ul li {
+  float: none;
+  width: 100%;
+}
+
+nav li ul li a {
+  padding: 8px 16px;
 }
