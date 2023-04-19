@@ -6,6 +6,7 @@ body {
   text-align: center;
   background-color: gainsboro;
   color: darkslategray;
+  margin: 30px;
 }
 
 nav {
@@ -16,26 +17,26 @@ nav {
 
 h1 {
   font-size: 36;
-  margin: 30px;
   font-weight: bold;
 }
 
 h2 {
   font-size: 32;
   color: rgb(67, 67, 67);
-  margin: 30px;
   margin-bottom: 10px;
 }
 
 h3 {
   font-size: 24;
-  margin: 30px;
+  margin-top: 10px;
   color: rgb(67, 67, 67);
 }
 
 p {
   font-size: 16px;
-  margin: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: left;
 }
 
 a {
@@ -43,12 +44,32 @@ a {
   color: mediumseagreen;
 }
 
-/* IT */
-nav ul {
+nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
+li {
+  float: left;
+}
+
+header {
+  background-color: #f7f7f7;
+  padding: 15px;
+}
+
+
+/* IT */
+/*
 
 nav ul li {
   display: none;
@@ -76,22 +97,4 @@ nav ul li.portfolio:hover {
 nav ul li ul li {
   display: block;
   width: 200px;
-}
-
-/* Center all text */
-.center {
-  text-align: center;
-}
-
-/* Set the background color and padding for the header */
-header {
-  background-color: #f7f7f7;
-  padding: 20px;
-}
-
-
-/* Remove bullet points from lists */
-ul {
-  list-style: none;
-  padding: 0;
-}
+}*/
