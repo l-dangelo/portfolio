@@ -1,6 +1,7 @@
 /* Center all text */
 body {
     text-align: center;
+    background-color: gainsboro;
   }
   
   /* Remove bullet points from lists */

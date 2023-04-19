@@ -1,18 +1,49 @@
-/* Set the font family to Anuphan */
 @import url('https://fonts.googleapis.com/css2?family=Anuphan&display=swap');
-/* Set the font family */
+
+/* ME */
 body {
   font-family: 'Anuphan', sans-serif;
   text-align: center;
+  background-color: gainsboro;
+  color: darkslategray;
 }
 
-/* Style the navigation bar */
 nav {
-  background-color: #333;
-  color: #fff;
+  background-color: darkslategray;
+  color: gainsboro;
   overflow: hidden;
 }
 
+h1 {
+  font-size: 36;
+  margin: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 32;
+  color: rgb(67, 67, 67);
+  margin: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 24;
+  margin: 30px;
+  color: rgb(67, 67, 67);
+}
+
+p {
+  font-size: 16px;
+  margin: 30px;
+}
+
+a {
+  font-size: 16;
+  color: mediumseagreen;
+}
+
+/* IT */
 nav ul {
   list-style: none;
   margin: 0;
@@ -39,7 +70,7 @@ nav ul li.portfolio:hover > ul {
 }
 
 nav ul li.portfolio:hover {
-  background-color: #f7f7f7; /* apply background color to the "Portfolio" link only */
+  background-color: gainsboro;
 }
 
 nav ul li ul li {
@@ -58,23 +89,6 @@ header {
   padding: 20px;
 }
 
-/* Set the font size and weight for the page titles */
-h1 {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-/* Set the font size and margin for paragraphs */
-p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-/* Set the font size and margin for links */
-a {
-  font-size: 16px;
-  margin-right: 20px;
-}
 
 /* Remove bullet points from lists */
 ul {
