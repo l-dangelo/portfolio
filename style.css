@@ -1,22 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan&display=swap');
 
-/* ME */
 body {
   font-family: 'Anuphan', sans-serif;
   background-color: gainsboro;
   color: darkslategray;
-  margin: 30px;
-}
-
-div{
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 h1 {
   font-size: 36;
   font-weight: bold;
-  margin-left: 50px;
 }
 
 h2 {
@@ -26,7 +18,6 @@ h2 {
 
 h3 {
   font-size: 24;
-  margin-top: 10px;
   color: rgb(67, 67, 67);
 }
 
@@ -42,7 +33,7 @@ a {
 nav {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 15px;
   overflow: hidden;
   background-color: #f7f7f7;
 }
@@ -59,7 +50,6 @@ li {
 
 header {
   background-color: #f7f7f7;
-  padding: 15px;
 }
 
 footer p {
@@ -86,5 +76,5 @@ nav li:hover ul{
 }
 
 nav .active{
-  background-color: darkslategray;
+  background-color: darkgray;
 }
