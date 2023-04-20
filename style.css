@@ -3,27 +3,25 @@
 /* ME */
 body {
   font-family: 'Anuphan', sans-serif;
-  text-align: center;
   background-color: gainsboro;
   color: darkslategray;
   margin: 30px;
 }
 
-nav {
-  background-color: darkslategray;
-  color: gainsboro;
-  overflow: hidden;
+div{
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 h1 {
   font-size: 36;
   font-weight: bold;
+  margin-left: 50px;
 }
 
 h2 {
   font-size: 32;
   color: rgb(67, 67, 67);
-  margin-bottom: 10px;
 }
 
 h3 {
@@ -34,14 +32,11 @@ h3 {
 
 p {
   font-size: 16px;
-  margin-left: 100px;
-  margin-right: 100px;
-  text-align: left;
 }
 
 a {
   font-size: 16;
-  color: mediumseagreen;
+  color: indigo;
 }
 
 nav {
@@ -67,34 +62,29 @@ header {
   padding: 15px;
 }
 
-
-/* IT */
-/*
-
-nav ul li {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
+footer p {
+  text-align: center;
 }
 
 nav ul li a {
-  display: block;
-  color: #fff;
   padding: 15px;
   text-decoration: none;
 }
 
-nav ul li.portfolio:hover > ul {
+nav ul li ul {
+  display: none;
+  width: 100%;
+  float: none;
+}
+
+nav li ul li a {
+  padding: 8px 16px;
+}
+
+nav li:hover ul{
   display: block;
 }
 
-nav ul li.portfolio:hover {
-  background-color: gainsboro;
+nav .active{
+  background-color: darkslategray;
 }
-
-nav ul li ul li {
-  display: block;
-  width: 200px;
-}*/
