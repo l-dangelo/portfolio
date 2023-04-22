@@ -1,0 +1,15 @@
+.featured1, .featured2, .featured3 {
+  margin: auto;
+  padding: 50px;
+  transition: transform .2s;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+
+.featured1:hover, .featured2:hover, .featured3:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5); 
+}

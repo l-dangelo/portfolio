@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Anuphan', sans-serif;
   background-color: gainsboro;
@@ -7,17 +11,22 @@ body {
 }
 
 h1 {
-  font-size: 36;
+  font-size: 36px;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 32;
+  font-size: 30px;
   color: rgb(67, 67, 67);
 }
 
 h3 {
-  font-size: 24;
+  font-size: 24px;
+  color: rgb(67, 67, 67);
+}
+
+h4{
+  font-size: 20px;  
   color: rgb(67, 67, 67);
 }
 
@@ -26,16 +35,34 @@ p {
 }
 
 a {
-  font-size: 16;
+  font-size: 16px;
   color: indigo;
 }
 
 nav {
-  list-style: none;
   margin: 0;
   padding: 15px;
   overflow: hidden;
   background-color: #f7f7f7;
+}
+
+nav ul li a {
+  padding: 15px;
+  text-decoration: none;
+}
+
+nav li:hover ul {
+  display: block;
+}
+
+nav .active {
+  background-color: darkgray;
+}
+
+.navName {
+  float: right;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 ul {
@@ -56,25 +83,14 @@ footer p {
   text-align: center;
 }
 
-nav ul li a {
-  padding: 15px;
-  text-decoration: none;
+div {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-nav ul li ul {
-  display: none;
-  width: 100%;
-  float: none;
-}
-
-nav li ul li a {
-  padding: 8px 16px;
-}
-
-nav li:hover ul{
-  display: block;
-}
-
-nav .active{
-  background-color: darkgray;
+.center {
+  display: flex;
+  justify-content: center;
 }
