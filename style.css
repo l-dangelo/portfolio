@@ -94,3 +94,13 @@ div {
   display: flex;
   justify-content: center;
 }
+
+.metasoundsFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.child {
+  flex-basis: 33.33333%;
+}
