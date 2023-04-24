@@ -35,14 +35,13 @@
         </p>
         <p>
           Specific Projects: <br />
-          <a href="#Death Bloom">Death Bloom - Sound Lead</a><br />
-          <a href="#VR Pirate Game">Unnamed VR Pirate Game</a>
+          <a href="#DeathBloom">Death Bloom - Sound Lead</a><br />
         </p>
       </div>
       <hr>
 
       <div>
-        <h2 id="Death Bloom">Death Bloom: &Aacute;revado's Final Chapter &#40;Ongoing&#41;</h2>
+        <h2 id="DeathBloom">Death Bloom: &Aacute;revado's Final Chapter &#40;Ongoing&#41;</h2>
         <h3>Lead Sound Designer</h3>
         <!-- ADD VIDEO (when trailer gets made) -->
         <h4>About the Project</h4>
@@ -52,7 +51,7 @@
           was created by a team of 45+ people. I was the Lead Sound Designer and
           was in charge of 3 main sound design students &#40;part of the project
           for the entire semester&#41; plus 13 &#34;contract&#34; sound design
-          students &#40;worked on the project for around half of the semester.&#41;
+          students &#40;worked on the project for around half of the semester&#41;.
         </p>
         <p>
           My role for this project included establishing audio standards,
@@ -78,32 +77,65 @@
           cannot acutally hear the sounds in the blueprint, so listen to the 
           videos below to hear the sounds themselves.
         </p>
-        <ul class="metasoundsFlex">
-          <li class="child"><h4>Lantern Noise Loop</h4></li>
-          <li class="child"><h4>Liquid Pouring</h4></li>
-          <li class="child"><h4>Level 2 Ambience</h4></li>
-          <li class="child"><iframe src="https://blueprintue.com/render/3oj3adky/" scrolling="no" allowfullscreen></iframe></li>
-          <li class="child"><iframe src="https://blueprintue.com/render/s5x25i5q/" scrolling="no" allowfullscreen></iframe></li>
-          <li class="child"><iframe src="https://blueprintue.com/render/048-hbjr/" scrolling="no" allowfullscreen></iframe></li>
-          <li class="child"><iframe src="https://youtu.be/vQS_fC5xFFA"></iframe></li>
-          <li class="child"><iframe src="https://youtu.be/KYKQV5BJPD0"></iframe></li>
-          <li class="child"><iframe src="https://youtu.be/hiMkwKindyQ"></iframe></li>
-        </ul>
+        <div class="metasoundsGrid">
+          <h4 class="msGrid">Lantern Noise</h4>
+          <h4 class="msGrid">Level 2 Drone</h4>
+          <h4 class="msGrid">Liquid Pouring</h4>
+          <iframe src="https://blueprintue.com/render/3oj3adky/" width=100% height=100% scrolling="no" allowfullscreen></iframe>
+          <iframe src="https://blueprintue.com/render/048-hbjr/" width=100% height=100% scrolling="no" allowfullscreen></iframe>
+          <iframe src="https://blueprintue.com/render/s5x25i5q/" width=100% height=100% scrolling="no" allowfullscreen></iframe>
+          <iframe src="https://youtube.com/embed/vQS_fC5xFFA" width=100% height=100%></iframe>
+          <iframe src="https://youtube.com/embed/KYKQV5BJPD0" width=100% height=100%></iframe>
+          <iframe src="https://youtube.com/embed/hiMkwKindyQ" width=100% height=100%></iframe>
+          <p>
+            Creating this MetaSound was surprisingly challenging. When the player 
+            first gets the lantern, there is no magical ambience. The magical 
+            ambience is controlled by two inputs, isMagical and isLevel3. This 
+            is because the magical ambience is two parts: the regular magic and 
+            the "moon" magic which is important to the narrative of the game. 
+            These inputs are changed in the lantern blueprint as well as the 
+            level blueprint. However, before the lantern becomes magical, I 
+            want the lantern noise loop to have some variation. I accomplished 
+            this by having two wave players, one to play the regular loop and 
+            the second to play a pitch shifted loop. I have two wave players 
+            so that the change in frequency is not abrput, but interps between 
+            the shifted loop and the regular loop.
+          </p>
+          <p>
+            This MetaSound controls the ambience for level 2. Of the three levels 
+            in the game, this one has the most variation in ambience. There are 
+            5 parts to it: the room tone, low drone, medium drone, intense drone, 
+            and the "spooky zone". I am able to balance these relative to each 
+            other in the MetaSound as the game is playing. Additionally, I learned 
+            a lot about generating sounds in engine when making the "spooky zone" 
+            ambience. The ambience samples a very small part of an asset used 
+            in a different part of the level to create a rhythmic, looping sound. 
+            In this demo, the audio asset for the "Intense Drone" has not yet 
+            been added. Unlike other assets in the game, this is also a stereo 
+            asset as I wanted it to play non-diegetically.
+          </p>
+          <p>
+            In Level 1, the player crafts something by pouring liquids. I wanted 
+            the sound to increase in pitch as the player added more liquid to 
+            the bucket to mimic real life. The player can pour at most two liquids 
+            into the bucket. To mimic this, I created this MetaSound to flip 
+            between the two assets I wanted to play. This was easier than doing 
+            it in a blueprint or another method as I could easily tie the 
+            MetaSound to the liquid pouring animation. Unfortunately, the video 
+            doesn't showcase the MetaSound acutally working as Unreal cannot 
+            simulate that, but it does work in the final build.
+          </p>
+        </div>
         <p>
           <a href="https://github.com/metalac190/GameLab_S23Game" target="_blank">GitHub</a>
         </p>
-      </div>
-      <hr>
-
-      <div>
-        <h2 id="VR Pirate Game">Unnamed VR Pirate Game</h2>
-        <!-- Composing, MuseScore -->
       </div>
     </div>
   </main>
 
   <footer>
     <br />
+    <hr>
     <p>Jump to the <a href="#Top">Top</a>.</p>
     <p>&copy; 2023 Lauren D'Angelo. All rights reserved.</p>
   </footer>

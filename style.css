@@ -95,12 +95,14 @@ div {
   justify-content: center;
 }
 
-.metasoundsFlex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.metasoundsGrid {
+  display: grid;
+  grid-template-rows: auto 300px 300px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 
-.child {
-  flex-basis: 33.33333%;
+.img {
+  float: right;
+  margin: 0 0 0 15px;
 }
