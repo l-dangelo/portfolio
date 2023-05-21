@@ -3,60 +3,51 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lauren D'Angelo - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+    <meta name="description" content="">
+    <title> Lauren D'Angelo - Home </title>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anuphan&display=swap" rel="stylesheet">
   </head>
 
 <body>
-  <header>
-		<nav>
-			<ul>
-				<li><a href="index.html" class="active">Home</a></li>
-				<li><a href="audio.html">Audio</a></li>
-				<li><a href="game_design.html">Game Design</a></li>
-				<li><a href="about.html">About & Contact</a></li>
-        <li class="navName">Lauren D'Angelo</li>
-			</ul>
-		</nav>
-  </header>
+  <nav>
+    <a href="/audio/" class="no-underline"> Audio </a>
+    <a href="/game-design/" class="no-underline"> Game Design </a>
+    <a href="/about/" class="no-underline"> About & Contact </a>
+    <a href="/" class="no-underline ml-auto active-page"> Lauren D'Angelo </a>
+  </nav>
 
   <main>
-    <div id="Top">
-      <div>
-        <h1>Welcome to my portfolio!</h1>
-        <p>As a soon to be graduate from the University of Texas at Dallas' Game
-          Design program, I am happy to showcase my portfolio. Though my
-          studies and outside work, I have developed strong skills in level
-          design, game mechanics, programming, and audio &#40;both for and
-          for not games&#41;.
-        </p>
-      </div>
+    <div>
+      <h1> Welcome to my portfolio! </h1>
+      <p>
+        As a recent graduate from the University of Texas at Dallas' Game Design program, I am happy to showcase my portfolio. Though my studies and outside work, I have developed strong skills in level design, game mechanics, programming, and audio (both for and not for games). Check out some of my featured works below and please contact me with any opportunities or feedback.
+      </p>
+    </div>
 
-      <h2 class="center">Featured Works</h2>
-      <div class="featuredFlex">
-        <div class="featured1">
-          <a href="audio.html#DeathBloom"><img width=100% src="Images\deathBloomCover.PNG"></img></a>
-        </div>
+    <h2 class="text-center"> Featured Works </h2>
+    <div class="flex flex-row flex-wrap justify-center projects">
+      <a href="/audio#DeathBloom" class="no-underline">
+        <img src="/assets/images\deathBloomCover.PNG"/>
+      </a>
 
-        <div class="featured2">
-          <a href="game_design.html#Capstone"><img width=100% src="Images\xiachronCover.png"></img></a>
-        </div>
+      <a href="game_design.html#Capstone" class="no-underline">
+        <img src="/assets/images\xiachronCover.png"/>
+      </a>
 
-        <div class="featured3">
-          <a href="game_design.html#DnD"><img width=100% src="Images\classicStartCover.PNG"></img></a>
-        </div>
-      </div>
+      <a href="game_design.html#DnD" class="no-underline">
+        <img src="/assets/images\classicStartCover.PNG"/>
+      </a>
     </div>
   </main>
 
-  <footer>
-    <br />
+  <footer class="text-center">
     <hr>
-    <p>Jump to the <a href="Top">Top</a>.</p>
     <p>&copy; 2023 Lauren D'Angelo. All rights reserved.</p>
   </footer>
 </body>

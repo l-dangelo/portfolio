@@ -1,0 +1,10 @@
+.projects > a
+{
+    width: 40%;
+    margin: 0.1rem .3rem;
+}
+
+main
+{
+    margin-bottom: 2rem;
+}
