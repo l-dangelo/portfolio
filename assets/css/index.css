@@ -8,3 +8,9 @@ main
 {
     margin-bottom: 2rem;
 }
+
+.feature1:hover, .feature2:hover, .feature3:hover {
+    -ms-transform: scale(1.25); 
+    -webkit-transform: scale(1.25); 
+    transform: scale(1.25)
+}

@@ -2,14 +2,14 @@
 
 /* Global Color Variables */
 body {
-  --background: gainsboro;
-  --background-light: #f7f7f7;
-  --background-dark: darkgray;
+  --background: #f4f4f4;
+  --background-light: #DCD0C0;
+  --background-dark: #AC9F8E;
 
-  --text-primary: darkslategray;
-  --text-secondary: rgb(67, 67, 67);
-  --text-highlight: indigo;
-  --text-alt: orange;
+  --text-primary: #373737;
+  --text-secondary: #C0B283;
+  --text-highlight: #5C6B3D;
+  --text-alt: #413f3d;
 
   --max-width: 850px;
 }
