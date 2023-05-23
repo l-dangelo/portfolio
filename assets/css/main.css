@@ -2,13 +2,13 @@
 
 /* Global Color Variables */
 body {
-  --background: #f4f4f4;
-  --background-light: #DCD0C0;
-  --background-dark: #AC9F8E;
+  --background: #F0E5DF;
+  --background-light: #BB4835;
+  --background-dark: #842D1C;
 
   --text-primary: #373737;
-  --text-secondary: #C0B283;
-  --text-highlight: #5C6B3D;
+  --text-secondary: #3e5337;
+  --text-highlight: #D6952F;
   --text-alt: #413f3d;
 
   --max-width: 850px;
@@ -59,6 +59,7 @@ p, a {
 
 a, a:visited {
   color: var(--text-highlight);
+  font-weight: bold;
 }
 
 a {
@@ -111,7 +112,7 @@ nav
   display: flex;
   flex-direction: row;
 
-  background-color: var(--background-light);
+  background-color: var(--background-dark);
   padding: 0 1rem;
 }S
 
@@ -127,7 +128,7 @@ nav > a
 
 nav > a.active-page
 {
-  background-color: var(--background-dark);
+  background-color: var(--background-light);
 }
 
 /* nav {
